@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "@svgr/webpack": "^8.1.0",
-    "framer-motion": "^11.3.21",
+    "framer-motion": "^12.23.26",
     "next": "^16.0.10",
     "react": "^19.2.3",
     "react-dom": "^19.2.3",
