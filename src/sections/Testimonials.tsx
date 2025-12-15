@@ -3,6 +3,10 @@ import memojiAvatar2 from "@/assets/images/memoji-avatar-2.png";
 import memojiAvatar3 from "@/assets/images/memoji-avatar-3.png";
 import memojiAvatar4 from "@/assets/images/memoji-avatar-4.png";
 import memojiAvatar5 from "@/assets/images/memoji-avatar-5.png";
+import { SectionHeader } from "@/components/SectionHeader";
+import { Fragment } from "react";
+import Card from "@/components/Card";
+import Image from "next/image";
 
 const testimonials = [
   {
@@ -38,5 +42,53 @@ const testimonials = [
 ];
 
 export const TestimonialsSection = () => {
-  return <div>Testimonials Section</div>;
+  return (
+    <div className="lg:py-24">
+      <div className="container">
+        {/* Flex Box for Client Testimonials Text Section */}
+        <SectionHeader
+          title="Happy Clients"
+          header="What Clients Say about Me"
+          description="Don't just take my word for it. See what my clients have to say about my work."
+        />
+
+        <div className="mt-12 lg:mt-20 flex overflow-x-clip [mask-image:linear-gradient(to_right,transparent,black_10%,black_90%,transparent)] py-4 -my-4">
+          {/* Info Box for each Clients testimonial*/}
+
+          <div className="flex gap-8 flex-none animate-move-left [animation-duration:90s] hover:[animation-play-state:paused]">
+            {[...new Array(2)].fill(0).map((_, idx) => (
+              <Fragment key={idx}>
+                {testimonials.map((testimonial) => (
+                  // Mapping testimonial data to each individual client.
+                  <Card
+                    key={testimonial.name}
+                    className="max-w-xs md:max-w-md p-6 md:p-8 hover:-rotate-3 hover:pointer transition duration-300"
+                  >
+                    <div className="flex gap-4 items-center">
+                      <div className="size-14 bg-gray-700 inline-flex items-center justify-center rounded-full flex-shrink-0">
+                        <Image
+                          src={testimonial.avatar}
+                          alt={testimonial.name}
+                          className="max-h-full"
+                        />
+                      </div>
+                      <div>
+                        <h3 className="font-semibold">{testimonial.name}</h3>
+                        <p className="text-white/40 text-sm">
+                          {testimonial.position}
+                        </p>
+                      </div>
+                    </div>
+                    <p className="text-sm mt-4 md:text-base md:mt-6">
+                      {testimonial.text}
+                    </p>
+                  </Card>
+                ))}
+              </Fragment>
+            ))}
+          </div>
+        </div>
+      </div>
+    </div>
+  );
 };
