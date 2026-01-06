@@ -1,10 +1,13 @@
 "use client";
-import darkSaasLandingPage from "@/assets/images/dark-saas-landing-page.png";
-import lightSaasLandingPage from "@/assets/images/light-saas-landing-page.png";
+import altiFinansLandingPage from "@/assets/images/alti-finans-hero-image-portfolio.webp";
+import zaikaLandingPage from "@/assets/images/zaika-hero-image-portfolio.webp";
+import edomaeLandingPage from "@/assets/images/edomae-restuarant-portfolio.webp";
+import suburbiaLandingPage from "@/assets/images/suburbiaImage.webp";
+import coteRoyaleLandingPage from "@/assets/images/coteRoyaleImage.webp";
+
 import CheckCircleIcon from "@/assets/icons/check-circle.svg";
 import ArrowUpRightIcon from "@/assets/icons/arrow-up-right.svg";
 import Card from "@/components/Card";
-import aiStartupLandingPage from "@/assets/images/ai-startup-landing-page.png";
 import Image from "next/image";
 import { SectionHeader } from "@/components/SectionHeader";
 import Link from "next/link";
@@ -12,39 +15,68 @@ import Link from "next/link";
 const portfolioProjects = [
   {
     company: "Alti Finans AS",
-    year: "2025",
-    title: "Full Stack Web Application",
+    year: "2023 - Present",
+    title: "Full-Stack Digital Platform & Brand System",
     results: [
-      { title: "Enhanced user experience by 40%" },
-      { title: "Improved site speed by 50%" },
-      { title: "Increased mobile traffic by 35%" },
+      { title: "End-to-end full-stack loan platform" },
+      { title: "Automated credit assessment" },
+      { title: "Internal workflows & CRM integrations" },
+      { title: "Company-wide digital brand identity" },
     ],
     link: "https://altifinans.no",
-    image: darkSaasLandingPage,
+    image: altiFinansLandingPage,
   },
   {
-    company: "Innovative Co",
-    year: "2021",
-    title: "Light Saas Landing Page",
+    company: "Zaika Restaurant",
+    year: "2025",
+    title: "Digitalisation & Complete Tech Solution",
     results: [
-      { title: "Boosted sales by 20%" },
-      { title: "Expanded customer reach by 35%" },
-      { title: "Increased brand awareness by 15%" },
+      { title: "High-conversion restaurant website." },
+      { title: "Centralized online ordering flow." },
+      { title: "Smoother internal operations." },
+      { title: "Digital marketing & brand visibility." },
     ],
-    link: "https://youtu.be/7hi5zwO75yc",
-    image: lightSaasLandingPage,
+    link: "https://www.zaikarestaurant.no",
+    image: zaikaLandingPage,
   },
   {
-    company: "Quantum Dynamics",
-    year: "2023",
-    title: "AI Startup Landing Page",
+    company: "Edomae Omakase",
+    year: "2025",
+    title: "Digital Presence & Experience Design",
     results: [
-      { title: "Enhanced user experience by 40%" },
-      { title: "Improved site speed by 50%" },
-      { title: "Increased mobile traffic by 35%" },
+      { title: "Minimal, premium website experience." },
+      { title: "Integrated reservation & booking flow." },
+      { title: "Brand-aligned visual identity." },
+      { title: "Elevated online presence." },
     ],
-    link: "https://youtu.be/Z7I5uSRHMHg",
-    image: aiStartupLandingPage,
+    link: "https://www.edomae.no",
+    image: edomaeLandingPage,
+  },
+  {
+    company: "Suburbia Skate",
+    year: "2025",
+    title: "Side Project for 3D animation.",
+    results: [
+      { title: "Minimal, premium website experience." },
+      { title: "Premium animation." },
+      { title: "3D rendering and animation." },
+      { title: "Aesthetic design." },
+    ],
+    link: "https://suburbia-skate.netlify.app",
+    image: suburbiaLandingPage,
+  },
+  {
+    company: "Cote Royale",
+    year: "2025",
+    title: "Hobby Project for learning.",
+    results: [
+      { title: "Luxurious website experience." },
+      { title: "Sleek animation." },
+      { title: "High end design." },
+      { title: "UX design." },
+    ],
+    link: "https://coteroyalecourse.netlify.app",
+    image: coteRoyaleLandingPage,
   },
 ];
 
@@ -53,9 +85,9 @@ export const ProjectsSection = () => {
     <section className="lg:py-24" id="projects">
       <div className="container">
         <SectionHeader
-          title="Real-world Results"
-          header="Featured Projects"
-          description="See how I transformed concepts into engaging digital experiences."
+          title="My Recent work"
+          header="Transforming designs into beautiful user experiences"
+          description="See how I helped companies that I collaborated with achieve their goals."
         />
 
         {/**
@@ -65,7 +97,7 @@ export const ProjectsSection = () => {
           {portfolioProjects.map((project, projectIndex) => (
             <Card
               key={project.title}
-              className="px-8 pt-8 pb-0 md:px-10 md:pt-12 lg:px-20 lg:pt-16 sticky"
+              className="px-6 pt-8 pb-0 md:px-10 md:pt-12 lg:px-20 lg:pt-16 sticky"
               style={{
                 top: `calc(60px + ${projectIndex * 40}px)`,
               }}
@@ -86,7 +118,7 @@ export const ProjectsSection = () => {
                   <ul className="flex flex-col gap-4 mt-4 md:mt-5">
                     {project.results.map((result) => (
                       <li
-                        className="flex items-center gap-2 text-white/50"
+                        className="flex  gap-1 md:gap-2 text-white/50"
                         key={result.title}
                       >
                         <CheckCircleIcon className="size-5 md:size-6" />
@@ -101,7 +133,7 @@ export const ProjectsSection = () => {
                     target="_blank"
                     className="hover:cursor-pointer"
                   >
-                    <button className="inline-flex items-center justify-center mt-8 w-full md:w-[178px] h-12 rounded-xl bg-white hover:bg-white/70 transition duration-300 text-gray-900 gap-2">
+                    <button className="inline-flex items-center justify-center mt-8 w-full md:w-[178px] h-12 rounded-xl bg-secondary-900 hover:bg-secondary-900/70 transition duration-300 text-gray-900 gap-2">
                       <span className="font-semibold">Visit Live Site</span>
                       <ArrowUpRightIcon className="size-4" />
                     </button>

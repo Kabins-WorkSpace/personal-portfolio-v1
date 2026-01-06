@@ -148,12 +148,12 @@ export const HeroSection = () => {
               <div className="bg-green-500 absolute inset-0 rounded-full animate-ping-large"></div>
             </div>
 
-            <div className="text-sm font-medium">
+            <div className="text-sm font-medium text-center">
               Available For Exciting Opportunities
             </div>
           </div>
 
-          <div className="max-w-lg mx-auto">
+          <div className="mx-auto">
             {/* Heading Text */}
             <h1 className="font-serif font-medium text-3xl md:text-5xl text-center mt-8 tracking-wide md:leading-tight">
               Computer Engineer, Athlete and an avid learner!
@@ -180,7 +180,7 @@ export const HeroSection = () => {
                 href={"https://www.linkedin.com/in/kabin7/"}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center px-6 h-12 gap-2 text-gray-900 bg-white border-white rounded-xl hover:cursor-pointer hover:bg-white/80 transition duration-300"
+                className="inline-flex items-center px-6 h-12 gap-2 text-gray-900 bg-secondary-900 border-white rounded-xl hover:cursor-pointer hover:bg-white/80 transition duration-300"
               >
                 <span>👋</span>
                 <span className="font-semibold">Let's Connect</span>

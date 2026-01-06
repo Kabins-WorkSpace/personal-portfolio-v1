@@ -20,13 +20,21 @@ const config: Config = {
       padding: {
         DEFAULT: "1rem",
         md: "2rem",
-        xl: "0.5rem"
+        xl: "0.5rem",
       },
     },
     extend: {
       fontFamily: {
         sans: "var(--font-sans)",
         serif: "var(--font-serif)",
+      },
+      colors: {
+        primary: {
+          900: "#003049",
+        },
+        secondary: {
+          900: "#FDF0D5",
+        },
       },
       animation: {
         "ping-large": "ping-large 1s ease-in-out infinite",
@@ -53,9 +61,9 @@ const config: Config = {
             transform: "translateX(-50%)",
           },
           "100%": {
-            transform: "translateX(0%)"
-          }
-        }
+            transform: "translateX(0%)",
+          },
+        },
       },
     },
   },

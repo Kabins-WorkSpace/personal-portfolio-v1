@@ -21,7 +21,11 @@ export const ContactSection = () => {
             </p>
           </div>
           <div className="text-center mt-8 md:mt-[51px] lg:mt-6 md:col-span-2 lg:col-span-1 md:ml-[84px] lg:ml-0.5">
-            <a href="" rel="noopener noreferrer" target="_blank">
+            <a
+              href="https://www.linkedin.com/in/kabin7/"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
               <button className="py-3 px-6 inline-flex items-center justify-center gap-2 bg-gray-900 mx-auto rounded-xl">
                 <span className="text-base font-medium">Contact Me</span>
                 <ArrowUpRightIcon className="size-4" />

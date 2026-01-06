@@ -15,7 +15,7 @@ export const Header = () => {
           href="https://www.linkedin.com/in/kabin7/"
           rel="noopener noreferrer"
           target="_blank"
-          className="nav-item rounded-full bg-white text-gray-900 font-bold hover:bg-white/80 hover:text-gray-900"
+          className="nav-item rounded-full bg-secondary-900 text-gray-900 font-bold hover:bg-white/80 hover:text-gray-900"
         >
           Contact
         </a>
