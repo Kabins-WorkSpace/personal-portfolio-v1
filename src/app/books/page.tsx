@@ -1,6 +1,8 @@
 import BookList from "@/sections/BookList";
 import Link from "next/link";
+import { Footer } from "@/sections/Footer";
 import { IoMdArrowRoundBack } from "react-icons/io";
+import { ContactSection } from "@/sections/Contact";
 
 export default function Book() {
   return (
@@ -13,6 +15,8 @@ export default function Book() {
         <span className="font-semibold text-xl">Back</span>
       </Link>
       <BookList />
+      <ContactSection />
+      <Footer />
     </section>
   );
 }
