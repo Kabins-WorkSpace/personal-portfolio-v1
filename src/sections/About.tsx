@@ -1,6 +1,6 @@
 import Card from "@/components/Card";
 import { SectionHeader } from "@/components/SectionHeader";
-import bookImage from "@/assets/images/book-cover.png";
+import bookImage from "@/assets/books/steve-jobs-biography.jpg";
 import ToolBoxItems from "@/components/ToolBoxItems";
 import mapImage from "@/assets/images/map-image.png";
 import personalImage from "@/assets/images/kabin-profile-abhishek-dai-ghar.webp";
@@ -24,6 +24,7 @@ export const AboutSection = () => {
               <CardHeader
                 title="My Reads"
                 description="Explore the books shaping my perspectives."
+                link="/books"
               />
 
               <div className="mx-auto w-40 mt-8">
