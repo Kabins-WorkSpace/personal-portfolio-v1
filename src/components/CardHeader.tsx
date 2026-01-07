@@ -1,10 +1,9 @@
 import StarIcon from "@/assets/icons/star.svg";
-import { twMerge } from "tailwind-merge";
 
 export default function CardHeader({
   title,
   description,
-  link,
+  link = "",
 }: {
   title: string;
   description: string;

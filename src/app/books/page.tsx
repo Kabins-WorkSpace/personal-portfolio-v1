@@ -7,8 +7,6 @@ export default function Book() {
     <section className="container mt-10">
       <Link
         href="/"
-        target="_blank"
-        rel="noopener noreferrer"
         className="inline-flex items-center px-6 h-12 gap-2 text-gray-900 bg-secondary-900 border-white rounded-xl hover:cursor-pointer hover:bg-white/80 transition duration-300"
       >
         <IoMdArrowRoundBack className="text-xl"/>

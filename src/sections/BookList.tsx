@@ -2,7 +2,6 @@ import BookCard from "@/components/BookCard";
 export default function BookList() {
   return (
     <section>
-      <button></button>
       <h1 className="text-5xl pt-8 pb-6">Books</h1>
       <p className="mb-4 text-lg">
         "... a mind needs a book as a sword needs an whetstone if it is to keep
