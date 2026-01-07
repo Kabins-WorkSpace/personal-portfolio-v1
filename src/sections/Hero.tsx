@@ -161,8 +161,7 @@ export const HeroSection = () => {
 
             {/* Description */}
             <p className="text-center text-white/60 md:text-lg mt-4">
-              I specialize in transforming designs into functional,
-              high-performing web applications. Lets discuss your next project.
+              I believe in doing the Best I can, where I am with what I have and let the power of compounding do the magic over time. And by combining this with the philosophy, "Simplicity is the utmost sophistication", I develop products which I expect to deliver high value impacts.
             </p>
 
             {/* CTA Buttons */}
