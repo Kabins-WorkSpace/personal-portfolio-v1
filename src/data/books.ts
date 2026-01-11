@@ -28,6 +28,14 @@ import superiorMan from "@/assets/books/superior-man.webp";
 import tuesdayWithMorrie from "@/assets/books/tuesday-with-morrie.webp";
 import twelveRules from "@/assets/books/twelve-rules.webp";
 import zahir from "@/assets/books/zahir.webp";
+import brida from "@/assets/books/brida.webp";
+import byTheRiverPiedra from "@/assets/books/by-the-river-piedra.webp";
+import hippie from "@/assets/books/hippie-book.webp";
+import kafkaOnTheShore from "@/assets/books/kafka-on-the-shore.webp";
+import subtleArt from "@/assets/books/the-subtle-art.webp";
+import veronikaDecidesToDie from "@/assets/books/veronica-decides-to-die.webp";
+import whenBreathBecomesAir from "@/assets/books/when-breath-becomes-air.webp";
+import whoMovedMyCheese from "@/assets/books/who-moved-my-cheese.webp";
 
 export const books = [
   {
@@ -269,5 +277,69 @@ export const books = [
     description: "",
     buttonText: "Reflections",
     url: zahir,
+  },
+  {
+    id: "brida",
+    title: "Brida",
+    author: "Paulo Coelho",
+    description: "",
+    buttonText: "Reflections",
+    url: brida,
+  },
+  {
+    id: "by-the-river-piedra",
+    title: "By the River Piedra I Sat Down and Wept",
+    author: "Paulo Coelho",
+    description: "",
+    buttonText: "Reflections",
+    url: byTheRiverPiedra,
+  },
+  {
+    id: "hippie",
+    title: "Hippie",
+    author: "Paulo Coelho",
+    description: "",
+    buttonText: "Life Journey",
+    url: hippie,
+  },
+  {
+    id: "kafka-on-the-shore",
+    title: "Kafka on the Shore",
+    author: "Haruki Murakami",
+    description: "",
+    buttonText: "Themes & Symbols",
+    url: kafkaOnTheShore,
+  },
+  {
+    id: "subtle-art",
+    title: "The Subtle Art of Not Giving a F*ck",
+    author: "Mark Manson",
+    description: "",
+    buttonText: "Life Principles",
+    url: subtleArt,
+  },
+  {
+    id: "veronika-decides-to-die",
+    title: "Veronika Decides to Die",
+    author: "Paulo Coelho",
+    description: "",
+    buttonText: "Existential Themes",
+    url: veronikaDecidesToDie,
+  },
+  {
+    id: "when-breath-becomes-air",
+    title: "When Breath Becomes Air",
+    author: "Paul Kalanithi",
+    description: "",
+    buttonText: "Reflections",
+    url: whenBreathBecomesAir,
+  },
+  {
+    id: "who-moved-my-cheese",
+    title: "Who Moved My Cheese?",
+    author: "Spencer Johnson",
+    description: "",
+    buttonText: "Change Mindset",
+    url: whoMovedMyCheese,
   },
 ];
