@@ -1,6 +1,7 @@
 "use client";
 import altiFinansLandingPage from "@/assets/images/alti-finans-hero-image-portfolio.webp";
 import zaikaLandingPage from "@/assets/images/zaika-hero-image-portfolio.webp";
+import neposLandingPage from "@/assets/images/nepos-landing-page.webp";
 import edomaeLandingPage from "@/assets/images/edomae-restuarant-portfolio.webp";
 import suburbiaLandingPage from "@/assets/images/suburbiaImage.webp";
 import coteRoyaleLandingPage from "@/assets/images/coteRoyaleImage.webp";
@@ -25,6 +26,19 @@ const portfolioProjects = [
     ],
     link: "https://altifinans.no",
     image: altiFinansLandingPage,
+  },
+  {
+    company: "Alti Finans AS",
+    year: "2023 - Present",
+    title: "Full-Stack Digital Platform & Brand System",
+    results: [
+      { title: "End-to-end full-stack loan platform" },
+      { title: "Automated credit assessment" },
+      { title: "Internal workflows & CRM integrations" },
+      { title: "Company-wide digital brand identity" },
+    ],
+    link: "https://altifinans.no",
+    image: neposLandingPage,
   },
   {
     company: "Zaika Restaurant",
