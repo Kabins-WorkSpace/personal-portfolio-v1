@@ -1,5 +1,6 @@
 "use client";
 import altiFinansLandingPage from "@/assets/images/alti-finans-hero-image-portfolio.webp";
+import chautariLandingPage from "@/assets/images/chautariLandingPage.webp";
 import zaikaLandingPage from "@/assets/images/zaika-hero-image-portfolio.webp";
 import neposLandingPage from "@/assets/images/nepos-landing-page.webp";
 import edomaeLandingPage from "@/assets/images/edomae-restuarant-portfolio.webp";
@@ -26,6 +27,19 @@ const portfolioProjects = [
     ],
     link: "https://altifinans.no",
     image: altiFinansLandingPage,
+  },
+  {
+    company: "Chautari Tims Mat",
+    year: "2026",
+    title: "Complete Tech Solution",
+    results: [
+      { title: "High-conversion restaurant website." },
+      { title: "Centralized online ordering flow." },
+      { title: "Smoother internal operations." },
+      { title: "Digital marketing & brand visibility." },
+    ],
+    link: "https://www.chautaritimsmat.no",
+    image: chautariLandingPage,
   },
   {
     company: "NEPOS Norway",
